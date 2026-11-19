@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build My Universe | Find the home that feels like yours</title>
+  <meta name="description" content="Verified homes, honest advice and a team that stays with you, across Mumbai, Bengaluru, Goa, Pune, Gurugram and Hyderabad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(!sessionStorage.getItem("nestora-intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro")}catch(e){}</script>
+</head>
+<body data-page="home">
+
+<!-- Shared SVG filter that turns soft blobs into fluffy clouds -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="cloudy" x="-30%" y="-30%" width="160%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.013" numOctaves="6" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="95" xChannelSelector="R" yChannelSelector="G" result="d"/>
+    <feGaussianBlur in="d" stdDeviation="8"/>
+  </filter>
+</svg>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <svg class="cloud cloud--a" viewBox="0 0 600 300" aria-hidden="true">
+      <g filter="url(#cloudy)">
+        <ellipse cx="300" cy="200" rx="210" ry="55" fill="#8fb9bd"/>
+        <circle cx="220" cy="165" r="70" fill="#b8d6d8"/><circle cx="320" cy="140" r="90" fill="#cfe3e4"/>
+        <circle cx="415" cy="175" r="62" fill="#b8d6d8"/><circle cx="300" cy="120" r="55" fill="#e7f1f1"/>
+      </g>
+    </svg>
+    <svg class="cloud cloud--b" viewBox="0 0 600 300" aria-hidden="true">
+      <g filter="url(#cloudy)"><ellipse cx="300" cy="190" rx="200" ry="50" fill="#a9cbce"/><circle cx="260" cy="150" r="70" fill="#d3e6e7"/><circle cx="360" cy="160" r="60" fill="#c3dcde"/></g>
+    </svg>
+
+    <div class="container hero-copy">
+      <h1 class="h1">Find the Home<br>That Feels Like Yours</h1>
+      <p>Verified homes, honest advice and one dedicated advisor, from the first viewing to the final keys, across six Indian cities.</p>
+      <div class="hero-actions">
+        <a class="btn btn--white btn--lg" href="contact.html">Book Your Free Consultation</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <form class="search" id="heroSearch" action="properties.html" method="get" data-native>
+        <input type="hidden" name="mode" value="buy">
+        <div class="search-tabs" role="tablist">
+          <button type="button" class="active" data-mode="buy">Buy</button>
+          <button type="button" data-mode="rent">Rent</button>
+        </div>
+        <div class="field"><label for="sCity">Location</label><select id="sCity" name="city"><option value="">All cities</option></select></div>
+        <div class="field"><label for="sType">Property type</label><select id="sType" name="type"><option value="">Any type</option></select></div>
+        <div class="field"><label for="sMax">Budget</label><select id="sMax" name="max"></select></div>
+        <button class="btn btn--white" type="submit">Search <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+    </div>
+
+    <div class="hero-visual">
+      <img class="hero-house" src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=2000&q=80" alt="Modern white villa with a pool">
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER + FEATURES ============ -->
+  <section class="section" style="padding-top:clamp(40px,6vw,80px)">
+    <div class="container">
+      <div class="head reveal">
+        <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></i>Newsletter</span>
+        <h2 class="h2">Stay Ahead of the Market</h2>
+        <p class="lead">Be the first to know when new homes go live. Join our list and never miss a property worth your attention.</p>
+        <form class="subscribe" data-toast="You're on the list. New listings will reach you first.">
+          <input type="email" required placeholder="you@example.com" aria-label="Email address">
+          <button class="btn btn--teal" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="float-house reveal">
+        <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80" alt="Minimal white modern house" loading="lazy">
+      </div>
+
+      <div class="features">
+        <div class="feature reveal">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <h3>Prime Neighbourhoods</h3>
+          <p>Homes in the pockets locals actually want to live in, from Worli to Whitefield.</p>
+        </div>
+        <div class="feature reveal reveal-d1">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></span>
+          <h3>Verified &amp; Curated</h3>
+          <p>Every home is visited and title-checked, then shortlisted to fit your lifestyle and budget.</p>
+        </div>
+        <div class="feature reveal reveal-d2">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/></svg></span>
+          <h3>Private Viewings</h3>
+          <p>Early access and one-on-one tours, in person or on video, before homes hit the portals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED SHOWCASE ============ -->
+  <section class="section section--sky">
+    <div class="container">
+      <div class="head reveal">
+        <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 11 12 4l9 7v9H3z"/></svg></i>Properties</span>
+        <h2 class="h2">Handpicked Homes,<br>Updated Every Week</h2>
+        <p class="lead">A rotating selection of our most-requested homes. Tap through, and open any one for photos, details and a viewing.</p>
+        <div class="seg" id="showTabs" role="tablist"></div>
+      </div>
+      <div class="showcase reveal" id="showcase" tabindex="0">
+        <div class="showcase-info"></div>
+      </div>
+      <div class="center" style="margin-top:28px"><a class="link" href="properties.html">View all listings <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS ============ -->
+  <section class="section" style="padding-top:clamp(56px,7vw,96px);padding-bottom:clamp(56px,7vw,96px)">
+    <div class="container head reveal" style="margin-bottom:36px">
+      <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/><path d="M8 12l3 3 5-6"/></svg></i>Partners</span>
+      <p class="partners-title">Our Trusted Partners</p>
+    </div>
+    <div class="partners" aria-label="Partner developers">
+      <div class="partners-track">
+        <span class="partner p1">Aurelia<small style="font-size:10px;letter-spacing:.3em;margin-left:6px;font-style:normal">ESTATES</small></span>
+        <span class="partner p2">MERIDIAN</span>
+        <span class="partner p3"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 15l5-8 5 8z" fill="#fff"/></svg>NORTHVALE</span>
+        <span class="partner p4">Stonebridge</span>
+        <span class="partner p5">Kestrel &amp; Co</span>
+        <span class="partner p6">lumen homes</span>
+        <span class="partner p1">Aurelia<small style="font-size:10px;letter-spacing:.3em;margin-left:6px;font-style:normal">ESTATES</small></span>
+        <span class="partner p2">MERIDIAN</span>
+        <span class="partner p3"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11"/><path d="M7 15l5-8 5 8z" fill="#fff"/></svg>NORTHVALE</span>
+        <span class="partner p4">Stonebridge</span>
+        <span class="partner p5">Kestrel &amp; Co</span>
+        <span class="partner p6">lumen homes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSIGHTS ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="head reveal">
+        <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></i>Insights</span>
+        <h2 class="h2">Property Insights That<br>Move You Forward</h2>
+        <p class="lead">Straight-talking guides on the market, home loans and investing, so you can buy, sell or rent with confidence.</p>
+      </div>
+      <div class="posts">
+        <article class="post reveal">
+          <div class="post-img"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy"></div>
+          <div class="post-meta"><b>Buying</b><span>12 Nov 2026 · 6 min read</span></div>
+          <h3>7 Things to Check Before You Sign a Builder Agreement</h3>
+        </article>
+        <article class="post reveal reveal-d1">
+          <div class="post-img"><img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy"></div>
+          <div class="post-meta"><b>Market</b><span>04 Nov 2026 · 4 min read</span></div>
+          <h3>Bengaluru vs Pune: Where Rental Yields Are Rising in 2027</h3>
+        </article>
+        <article class="post reveal reveal-d2">
+          <div class="post-img"><img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy"></div>
+          <div class="post-meta"><b>NRI Guide</b><span>28 Oct 2026 · 8 min read</span></div>
+          <h3>Buying a Home in India From Abroad: The Complete Checklist</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="container stats">
+      <div class="reveal"><div class="stat-num" data-count="1200" data-suffix="+">0</div><div class="stat-label">Homes Delivered</div><div class="stat-sub">Across six cities since 2016</div></div>
+      <div class="reveal reveal-d1"><div class="stat-num" data-count="10">0</div><div class="stat-label">Years of Experience</div><div class="stat-sub">A decade of honest advice</div></div>
+      <div class="reveal reveal-d2"><div class="stat-num" data-count="24">0</div><div class="stat-label">Trusted Specialists</div><div class="stat-sub">Advisors, legal and loan experts</div></div>
+      <div class="reveal reveal-d3"><div class="stat-num" data-count="98" data-suffix="%">0</div><div class="stat-label">Client Satisfaction</div><div class="stat-sub">Would recommend us to a friend</div></div>
+    </div>
+  </section>
+
+  <!-- ============ LISTINGS ============ -->
+  <section class="section section--sky">
+    <div class="container">
+      <div class="head reveal">
+        <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></i>Listings</span>
+        <h2 class="h2">Premium Listings,<br>Zero Guesswork</h2>
+        <p class="lead">Handpicked homes with verified availability, clear pricing and honest details, so you can move forward with confidence.</p>
+      </div>
+      <div class="grid" id="listingGrid"></div>
+      <div class="center" style="margin-top:40px"><a class="btn btn--teal btn--lg" href="properties.html">Browse all properties <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="head reveal">
+        <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></i>Testimonials</span>
+        <h2 class="h2">What Our Clients Say</h2>
+        <p class="lead">Real stories from buyers, sellers and renters who trusted us with their biggest moves.</p>
+      </div>
+      <div class="testimonial reveal" id="testimonial">
+        <div class="portrait-wrap"><div class="portrait"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=500&q=80" alt="Client portrait"></div></div>
+        <div>
+          <p class="quote-text">“We were buying from Dubai and couldn't visit once. The team ran video tours, checked every document and negotiated ₹40 lakh off. Handover day was the first time we saw our home, and it was perfect.”</p>
+          <div class="quote-name">Ananya &amp; Rohan · Whitefield</div>
+          <div class="quote-nav">
+            <button id="qPrev" aria-label="Previous testimonial"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+            <button id="qNext" aria-label="Next testimonial"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact-band">
+    <img class="bg-house" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=80" alt="" loading="lazy">
+    <div class="container">
+      <div class="head reveal">
+        <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i>Contact</span>
+        <h2 class="h2">Get the Best Listings<br>Before Anyone Else</h2>
+        <p class="lead">Tell us what you're looking for. A real advisor will call you back within the hour with early access to matching homes.</p>
+      </div>
+      <div class="form-card reveal">
+        <form class="form" data-toast="Thanks! An advisor will call you within the hour.">
+          <label>Name<input class="input" required placeholder="Your full name"></label>
+          <div class="form-row">
+            <label>Email<input class="input" type="email" required placeholder="you@example.com"></label>
+            <label>Phone<input class="input" type="tel" placeholder="+91"></label>
+          </div>
+          <label>Location
+            <select class="input">
+              <option value="">Select…</option>
+              <option>Mumbai</option><option>Bengaluru</option><option>Pune</option><option>Gurugram</option><option>Hyderabad</option><option>Goa</option>
+            </select>
+          </label>
+          <button class="btn btn--teal btn--block btn--lg" type="submit">Submit</button>
+          <div class="form-success">Thanks! An advisor will call you within the hour.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fx.js"></script>
+</body>
+</html>

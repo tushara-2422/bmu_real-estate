@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties | Build My Universe</title>
+  <meta name="description" content="Browse verified homes for sale and rent across India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(!sessionStorage.getItem("nestora-intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro")}catch(e){}</script>
+</head>
+<body data-page="properties">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="cloudy" x="-30%" y="-30%" width="160%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.013" numOctaves="6" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="95" xChannelSelector="R" yChannelSelector="G" result="d"/>
+    <feGaussianBlur in="d" stdDeviation="8"/>
+  </filter>
+</svg>
+
+<main>
+  <section class="page-hero">
+    <svg class="cloud cloud--a" viewBox="0 0 600 300" aria-hidden="true"><g filter="url(#cloudy)"><ellipse cx="300" cy="200" rx="210" ry="55" fill="#8fb9bd"/><circle cx="220" cy="165" r="70" fill="#b8d6d8"/><circle cx="320" cy="140" r="90" fill="#cfe3e4"/><circle cx="415" cy="175" r="62" fill="#b8d6d8"/></g></svg>
+    <svg class="cloud cloud--b" viewBox="0 0 600 300" aria-hidden="true"><g filter="url(#cloudy)"><ellipse cx="300" cy="190" rx="200" ry="50" fill="#a9cbce"/><circle cx="260" cy="150" r="70" fill="#d3e6e7"/><circle cx="360" cy="160" r="60" fill="#c3dcde"/></g></svg>
+    <div class="container">
+      <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 11 12 4l9 7v9H3z"/></svg></i>Verified listings</span>
+      <h1 class="h1" id="listTitle">Every listing</h1>
+      <p>Every home here has been visited by our team. Filter by city, budget or type, and save the ones you love to your shortlist.</p>
+    </div>
+  </section>
+
+  <div class="filters">
+    <div class="container filters-row">
+      <div class="seg" id="fMode">
+        <button data-mode="all">All</button>
+        <button data-mode="buy">Buy</button>
+        <button data-mode="rent">Rent</button>
+      </div>
+      <input class="f-input" id="fQ" type="search" placeholder="Search area, city or keyword…" aria-label="Search">
+      <select class="f-select" id="fCity" aria-label="City"><option value="">All cities</option></select>
+      <select class="f-select" id="fType" aria-label="Type"><option value="">Any type</option></select>
+      <select class="f-select" id="fBeds" aria-label="Bedrooms">
+        <option value="">Any beds</option><option value="1">1+ beds</option><option value="2">2+ beds</option><option value="3">3+ beds</option><option value="4">4+ beds</option><option value="5">5+ beds</option>
+      </select>
+      <select class="f-select" id="fMax" aria-label="Budget"></select>
+    </div>
+  </div>
+
+  <section class="container" style="padding-bottom:clamp(64px,8vw,110px)">
+    <div class="results-bar">
+      <span class="count" id="count"></span>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn btn--outline" id="fSaved">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.6-9.5-9.3C1.1 8.3 3.3 4.5 7 4.5c2 0 3.4 1.1 5 3 1.6-1.9 3-3 5-3 3.7 0 5.9 3.8 4.5 7.2C19.5 16.4 12 21 12 21z"/></svg>
+          Shortlist
+        </button>
+        <select class="f-select" id="fSort" aria-label="Sort">
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low to high</option>
+          <option value="price-desc">Price: High to low</option>
+          <option value="size">Size: Largest</option>
+          <option value="newest">Newest builds</option>
+        </select>
+      </div>
+    </div>
+    <div id="results"></div>
+  </section>
+
+  <section class="section section--sky" style="padding-top:0">
+    <div class="container head reveal" style="margin-bottom:0">
+      <span class="tag"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></i>Off-market</span>
+      <h2 class="h2">Can't Find It? We Will.</h2>
+      <p class="lead">Around 40% of what we sell never appears online. Share your brief and we'll check our private list.</p>
+      <a class="btn btn--teal btn--lg" href="contact.html">Share your brief</a>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fx.js"></script>
+</body>
+</html>

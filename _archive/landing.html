@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build My Universe | Homes in Bangalore</title>
+  <meta name="description" content="Build My Universe is a small real estate team in Bangalore. We help people buy, rent and sell homes in Whitefield, Sarjapur Road, Indiranagar, Koramangala, Hebbal and beyond.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Albert+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css?v=20261119-5">
+</head>
+<body>
+
+<!-- Logo mark, reused below -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="bmuGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffc184"/><stop offset="0.5" stop-color="#f08a3c"/><stop offset="1" stop-color="#d9611a"/></linearGradient>
+    <symbol id="bmu-mark" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="7.2" fill="url(#bmuGrad)"/>
+      <circle cx="13.6" cy="13.4" r="2.2" fill="#fff" opacity="0.35"/>
+      <g class="ring"><ellipse cx="16" cy="16" rx="14.2" ry="5" fill="none" stroke="currentColor" stroke-opacity="0.75" stroke-width="1.3" transform="rotate(-24 16 16)"/></g>
+      <circle cx="28.4" cy="10.6" r="1.4" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="cosmos" aria-hidden="true">
+  <i class="aur a1"></i><i class="aur a2"></i><i class="aur a3"></i>
+  <i class="stars s1"></i><i class="stars s2"></i>
+  <i class="light" id="cursorLight"></i>
+</div>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="row">
+    <span class="logo"><svg><use href="#bmu-mark"/></svg>Build My <b>Universe</b></span>
+    <button class="menu-btn" id="menuClose" aria-label="Close menu" style="display:grid">✕</button>
+  </div>
+  <nav><a href="#collection">Homes</a><a href="#localities">Neighbourhoods</a><a href="#about">About</a><a href="#faq">Questions</a><a href="index.html">Full website</a></nav>
+  <button class="pill pill--orange pill--lg" data-enquire="">Book a visit</button>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="panel hero hero-light" data-panel>
+    <div class="frame">
+      <header class="lh-top">
+        <a href="#top" class="logo logo--dark" aria-label="Build My Universe, back to top"><svg><use href="#bmu-mark"/></svg>Build My <b>Universe</b></a>
+        <div class="lh-actions">
+          <a href="tel:+918000000000" class="pill pill--outline">Call us</a>
+          <button class="pill pill--ink" data-enquire="">Book a visit</button>
+          <button class="menu-btn menu-btn--dark" id="menuOpen" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h16M4 16h16"/></svg></button>
+        </div>
+      </header>
+
+      <div class="lh-copy">
+        <div class="lh-arrows" aria-hidden="true"><span class="up">↑</span><a href="#about" class="down" tabindex="-1">↓</a></div>
+        <span class="lh-kicker fade">Find your own place</span>
+        <h1 class="rise"><span class="ln"><span><b>Your</b> next home</span></span><span class="ln"><span>in <b>Bangalore</b></span></span></h1>
+        <p class="lh-sub fade">We're a small team that knows this city street by street. Tell us how you live, and we'll show you the homes worth a weekend visit.</p>
+        <div class="lh-buttons fade d1">
+          <a href="#collection" class="pill pill--ink pill--lg">Browse homes</a>
+          <button class="lh-link" data-enquire="">Book a visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></button>
+        </div>
+      </div>
+
+      <div class="vword" aria-hidden="true"><div class="vword-track"><span>Bangalore</span><span>Bangalore</span></div></div>
+      <div class="cascade" id="cascade" aria-label="Homes on our list"></div>
+      <div class="lh-chips" id="lhChips"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="panel panel--glass about" id="about" data-panel>
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <span class="kicker fade">About us</span>
+          <h2 class="rise"><span class="ln"><span>We started this because</span></span><span class="ln"><span>house-hunting in Bangalore</span></span><span class="ln"><span>was exhausting.</span></span></h2>
+          <p class="fade d1">Listings were out of date, the photos were too kind, and nobody mentioned the two-hour drive to Manyata. So we do it differently. We visit every home ourselves, get the papers checked before you get attached, and tell you the things a listing won't, like whether the society still depends on tanker water.</p>
+          <div class="about-actions fade d2">
+            <a href="#collection" class="pill pill--orange">See the homes</a>
+            <a href="tel:+918000000000" class="text-link">Or call us</a>
+          </div>
+        </div>
+        <div class="about-media fade">
+          <img data-parallax="0.06" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" alt="A villa in Whitefield in the evening">
+        </div>
+      </div>
+
+      <div class="localities glass fade" id="localities">
+        <div><h3>Where we work</h3><span>Pick a neighbourhood to see what's available there.</span></div>
+        <div class="chips" id="localityChips"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOMES (rendered by js/landing.js) ============ -->
+  <div id="collection-anchor" hidden></div>
+
+  <!-- ============ MORE HOMES ============ -->
+  <section class="panel panel--glass stories" id="stories" data-panel>
+    <div class="wrap">
+      <div class="stories-head">
+        <div>
+          <span class="kicker fade">On our list right now</span>
+          <h2 class="rise"><span class="ln"><span>A few more we like</span></span></h2>
+          <p class="fade d1">Some of these will be gone in a few weeks. If one catches your eye, ask us about it.</p>
+        </div>
+        <a href="properties.html" class="pill pill--glass fade d1">See every home</a>
+      </div>
+      <div class="story-grid" id="storyGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="panel panel--glass faq-sec" id="faq" data-panel>
+    <div class="wrap faq-grid">
+      <div class="faq-intro">
+        <span class="kicker fade">Questions</span>
+        <h2 class="rise"><span class="ln"><span>Things people</span></span><span class="ln"><span>usually ask us</span></span></h2>
+        <p class="fade d1">If yours isn't here, just ask. We'd rather answer it on a call than have you guess.</p>
+        <button class="pill pill--glass fade d2" data-enquire="">Ask us something</button>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item glass fade open"><button class="faq-q" aria-expanded="true">Which parts of Bangalore do you cover?<span class="ic"></span></button><div class="faq-a"><div><p>Most of the city. A lot of our work is in Whitefield, Sarjapur Road and Bellandur in the east, Koramangala, HSR and JP Nagar in the south, Indiranagar and Sadashivanagar in the centre, and Hebbal, Yelahanka and Devanahalli up north. If you're looking somewhere else, ask anyway.</p></div></div></div>
+        <div class="faq-item glass fade"><button class="faq-q" aria-expanded="false">How do you check the paperwork?<span class="ic"></span></button><div class="faq-a"><div><p>Before we show you a home, our lawyer goes through the title, the khata, the encumbrance certificate and the layout approval. For new projects we also check the RERA registration. You get a short summary in plain English before you pay any token amount.</p></div></div></div>
+        <div class="faq-item glass fade"><button class="faq-q" aria-expanded="false">I work on the Outer Ring Road. Where should I live?<span class="ic"></span></button><div class="faq-a"><div><p>It depends which end. For Bellandur and Marathahalli, Sarjapur Road and HSR are good options. For Whitefield, living close by is usually worth it, or near a Purple Line station. We check the commute at peak hour before suggesting anything.</p></div></div></div>
+        <div class="faq-item glass fade"><button class="faq-q" aria-expanded="false">How much do you charge?<span class="ic"></span></button><div class="faq-a"><div><p>It depends on whether you're buying, renting or selling, and we'll tell you the exact fee on the first call. You don't pay anything until the deal is done.</p></div></div></div>
+        <div class="faq-item glass fade"><button class="faq-q" aria-expanded="false">Can I buy from outside India?<span class="ic"></span></button><div class="faq-a"><div><p>Yes, plenty of our clients do. We do video walkthroughs, help with the power of attorney and NRI home loans, and can look after the house once it's yours.</p></div></div></div>
+        <div class="faq-item glass fade"><button class="faq-q" aria-expanded="false">How soon can I move into a rental?<span class="ic"></span></button><div class="faq-a"><div><p>If the flat is furnished and the owner is ready, often within a week or two. That includes the rental agreement and police verification.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="panel panel--glass cta" id="contact" data-panel>
+    <div class="wrap">
+      <div class="cta-card glass fade">
+        <div>
+          <span class="kicker">Get in touch</span>
+          <h2 class="rise"><span class="ln"><span>Tell us what</span></span><span class="ln"><span>you're looking for.</span></span></h2>
+          <p>Budget, area, number of bedrooms, whether you need a garden for the dog. Send it over and one of us will call you back, usually the same day.</p>
+          <div class="cta-actions">
+            <button class="pill pill--orange pill--lg" data-enquire="">Book a visit</button>
+            <a href="https://wa.me/918000000000" target="_blank" rel="noopener" class="pill pill--glass pill--lg">WhatsApp us</a>
+          </div>
+          <div class="cta-visit">
+            <div><span>Visit us</span>80 Feet Road, Indiranagar<br>Bengaluru 560038</div>
+            <div><span>Open</span>Monday to Saturday<br>10am to 7pm</div>
+          </div>
+        </div>
+        <div class="cta-media">
+          <img data-parallax="0.06" src="https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1200&q=80" alt="A villa off Sarjapur Road in the evening">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="panel panel--glass footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <span class="logo"><svg><use href="#bmu-mark"/></svg>Build My <b>Universe</b></span>
+          <p>A small real estate team in Bangalore. We help people buy, rent and sell homes, and we're happy to just talk things through.</p>
+        </div>
+        <div><h4>Explore</h4><ul><li><a href="#collection">Homes</a></li><li><a href="#localities">Neighbourhoods</a></li><li><a href="#faq">Questions</a></li><li><a href="index.html">Full website</a></li></ul></div>
+        <div><h4>Office</h4><address>80 Feet Road, Indiranagar<br>Bengaluru 560038<br><a href="tel:+918000000000">+91 80 0000 0000</a></address></div>
+        <div>
+          <h4>New listings by email</h4>
+          <form class="news glass" id="newsForm"><input type="email" required placeholder="Your email" aria-label="Email"><button class="pill pill--orange" type="submit">Sign up</button></form>
+          <p class="news-note">About once a month. No spam.</p>
+        </div>
+      </div>
+      <div class="footer-word" aria-hidden="true">Build My Universe</div>
+      <div class="footer-bottom"><span>© 2026 Build My Universe</span><span><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">Privacy</a></span><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+</main>
+
+<div class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Details">
+  <div class="drawer-bg" data-close></div>
+  <div class="drawer-panel" id="drawerPanel" data-lenis-prevent></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/data.js?v=20261119-5"></script>
+<script src="js/landing.js?v=20261119-5"></script>
+</body>
+</html>
